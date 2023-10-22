@@ -19,6 +19,13 @@
 #
 #  """Calibre-web distribution package setuptools installer."""
 
+#setup python-ldap for Windows: https://www.python-ldap.org/en/python-ldap-3.3.0/installing.html#windows
+# https://www.lfd.uci.edu/~gohlke/pythonlibs/#python-ldap
+# https://pip.pypa.io/en/latest/user_guide/#installing-from-wheels
+# For python 3.10 try: pip install https://download.lfd.uci.edu/pythonlibs/archived/python_ldap-3.4.0-cp310-cp310-win_amd64.whl
+# https://anaconda.org/conda-forge/python-ldap
+# conda install -c conda-forge python-ldap
+
 from setuptools import setup
 from setuptools import find_packages
 import os

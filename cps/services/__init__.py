@@ -28,8 +28,10 @@ except ImportError as err:
 
 
 try:
-    from . import simpleldap as ldap
-    from .simpleldap import ldapVersion
+    #from . import simpleldap as ldap
+    #from .simpleldap import ldapVersion
+    ldap = None
+    ldapVersion = None
 except ImportError as err:
     log.debug("Cannot import simpleldap, logging in with ldap will not work: %s", err)
     ldap = None
